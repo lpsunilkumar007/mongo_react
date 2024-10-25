@@ -1,0 +1,387 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Workplace\\NewWorking\\mongo_react\\WebAppTypescript\\WebAppTypescriptApi.csproj": {}
+  },
+  "projects": {
+    "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Application\\Typescript.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Application\\Typescript.Service.csproj",
+        "projectName": "Typescript.Service",
+        "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Application\\Typescript.Service.csproj",
+        "packagesPath": "C:\\Users\\LP INFOTECH2023\\.nuget\\packages\\",
+        "outputPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LP INFOTECH2023\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\Typescript.Core.csproj": {
+                "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\Typescript.Core.csproj"
+              },
+              "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\Typescript.Data.csproj": {
+                "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\Typescript.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.30.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\Typescript.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\Typescript.Core.csproj",
+        "projectName": "Typescript.Core",
+        "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\Typescript.Core.csproj",
+        "packagesPath": "C:\\Users\\LP INFOTECH2023\\.nuget\\packages\\",
+        "outputPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LP INFOTECH2023\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\Typescript.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\Typescript.Data.csproj",
+        "projectName": "Typescript.Data",
+        "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\Typescript.Data.csproj",
+        "packagesPath": "C:\\Users\\LP INFOTECH2023\\.nuget\\packages\\",
+        "outputPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LP INFOTECH2023\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\Typescript.Core.csproj": {
+                "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\Typescript.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Identity\\Typescript.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Identity\\Typescript.Identity.csproj",
+        "projectName": "Typescript.Identity",
+        "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Identity\\Typescript.Identity.csproj",
+        "packagesPath": "C:\\Users\\LP INFOTECH2023\\.nuget\\packages\\",
+        "outputPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Identity\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LP INFOTECH2023\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\Typescript.Core.csproj": {
+                "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Core\\Typescript.Core.csproj"
+              },
+              "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\Typescript.Data.csproj": {
+                "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\Typescript.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AspNetCore.Identity.MongoDbCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Workplace\\NewWorking\\mongo_react\\WebAppTypescript\\WebAppTypescriptApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Workplace\\NewWorking\\mongo_react\\WebAppTypescript\\WebAppTypescriptApi.csproj",
+        "projectName": "WebAppTypescriptApi",
+        "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\WebAppTypescript\\WebAppTypescriptApi.csproj",
+        "packagesPath": "C:\\Users\\LP INFOTECH2023\\.nuget\\packages\\",
+        "outputPath": "D:\\Workplace\\NewWorking\\mongo_react\\WebAppTypescript\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\LP INFOTECH2023\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Application\\Typescript.Service.csproj": {
+                "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Application\\Typescript.Service.csproj"
+              },
+              "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\Typescript.Data.csproj": {
+                "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Data\\Typescript.Data.csproj"
+              },
+              "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Identity\\Typescript.Identity.csproj": {
+                "projectPath": "D:\\Workplace\\NewWorking\\mongo_react\\Typescript.Identity\\Typescript.Identity.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "ZymLabs.NSwag.FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[0.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
