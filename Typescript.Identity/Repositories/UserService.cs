@@ -36,7 +36,7 @@ namespace Typescript.Identity.Repositories
 
         }
 
-        public async Task<string> UserLoginAsync(UserLoginDTO userLogin)
+        public async Task<ApplicationUser> UserLoginAsync(UserLoginDTO userLogin)
         {
             ApplicationUser appUser = await _userManager.FindByEmailAsync(userLogin.Email);
             if (appUser != null)
@@ -45,10 +45,10 @@ namespace Typescript.Identity.Repositories
                 SignInResult result = await _signInManager.PasswordSignInAsync(appUser, userLogin.Password, false, false);
                 if (result.Succeeded)
                 {
-                    return "Login Successfully";
+                    return appUser;
                 }
             }
-            return "Something went worng";
+            return null;
         }
 
     }

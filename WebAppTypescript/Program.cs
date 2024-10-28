@@ -1,4 +1,7 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using Typescript.Core.Interface;
 using Typescript.Data.Connection;
 using Typescript.Identity.Interface;
@@ -20,6 +23,36 @@ builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
 mongoDbSettings.ConnectionString, mongoDbSettings.Name
 ).AddDefaultTokenProviders();
 #endregion
+
+
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+var key = Encoding.UTF8.GetBytes(jwtSettings["Secretkey"]);
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtSettings["Issuer"],
+            ValidAudience = jwtSettings["Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+builder.Services.AddMemoryCache();
+
+builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
 
 builder.Services.AddOpenApiDocument();
 builder.Services.AddScoped<IUserService, UserService>();
