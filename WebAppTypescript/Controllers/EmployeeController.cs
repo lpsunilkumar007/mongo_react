@@ -16,13 +16,13 @@ namespace WebAppTypescriptApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateAsync(EmployeeDTO request)
+        public async Task<ActionResult<Employee>> CreateAsync(EmployeeDTO request)
         {
             try
             {
                 if (request == null) return BadRequest("Invalid employee data");
                 var response = await _employeeService.CreateAsync(request);
-                return Ok(new { message = response });
+                return Ok(new { Employee = response });
             }
             catch (Exception ex)
             {
@@ -31,7 +31,7 @@ namespace WebAppTypescriptApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetListAsync()
+        public async Task<ActionResult<List<Employee>>> GetListAsync()
         {
             try
             {
@@ -45,7 +45,7 @@ namespace WebAppTypescriptApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetByIdAsync(string id)
+        public async Task<ActionResult<Employee>> GetByIdAsync(string id)
         {
             try
             {

@@ -5,7 +5,7 @@ namespace Typescript.Core.Interface
 {
     public interface IEmployeeService
     {
-        Task<string> CreateAsync(EmployeeDTO request);
+        Task<Employee> CreateAsync(EmployeeDTO request);
         Task<List<Employee>> GetAllAsync();
         Task<Employee> GetByIdAsync(string id);
         Task<string> UpdateAsyns(string id, Employee request);

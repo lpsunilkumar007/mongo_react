@@ -22,14 +22,14 @@ namespace WebAppTypescriptApi.Controllers
         }
 
         [HttpPost("register")]
-        public async Task<IActionResult> RegisterAsync(UserRegisterDTO request)
+        public async Task<ActionResult<string>> RegisterAsync(UserRegisterDTO request)
         {
             var response = await _userService.UserRegisterAsync(request);
             return Ok(new { message = response });
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> LoginAsync(UserLoginDTO request)
+        public async Task<ActionResult<string>> LoginAsync(UserLoginDTO request)
         {
             var response = await _userService.UserLoginAsync(request);
             if (response == null) return BadRequest(new { error = "User not found" });

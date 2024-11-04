@@ -19,7 +19,7 @@ namespace Typescript.Service.Repositories
             _employeeCollection = mongoDatabase.GetCollection<Employee>("Employee");
         }
 
-        public async Task<string> CreateAsync(EmployeeDTO request)
+        public async Task<Employee> CreateAsync(EmployeeDTO request)
         {
             var employee = new Employee
             {
@@ -33,7 +33,7 @@ namespace Typescript.Service.Repositories
             };
 
             await _employeeCollection.InsertOneAsync(employee);
-            return "Employee Created successfully.";
+            return employee;
         }
 
         public async Task<List<Employee>> GetAllAsync()
